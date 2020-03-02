@@ -1,0 +1,12 @@
+---
+layout: default
+title: Version of Microbat
+---
+<h1>{{ page.title }}</h1>
+	<ul>
+{% assign zip_files = site.static_files | where: "zip", true %}
+{% for zipfile in zip_files %}
+<li>
+<a href="{{ site.url }}{{ zipfile.path }}">{{ zipfile.name }} {{ zipfile.modified_time }} </a></li>
+{% endfor %}
+</ul>

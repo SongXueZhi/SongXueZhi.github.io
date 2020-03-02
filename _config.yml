@@ -1,3 +1,7 @@
-theme: jekyll-theme-leap-day
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+defaults:
+  - scope:
+      path: "download/source"
+    values:
+      zip: true
