@@ -5,3 +5,4 @@ defaults:
       path: "download/source"
     values:
       zip: true
+theme: jekyll-theme-minimal
